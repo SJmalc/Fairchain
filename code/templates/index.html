@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>FairChain</h1>
+    <p class="lead">FairChain is a platform for FairTrade that allows producers, exporters, and retailers to make publicly auditable transactions on the Ethereum blockchain</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Add an item to the blockchain</h2>
+        <p>
+            Create an Ethereum smart contract to sell your item on the blockchain.
+        </p>
+        <p><a class="btn btn-primary" href="{{ url_for('add_item') }}">Add your item! &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Buy an item</h2>
+        <p>Buy an item that has already been posted to the blockchain by someone else.</p>
+        <p><a class="btn btn-primary" href="{{ url_for('buy_item') }}">Buy an item! &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Delete an item</h2>
+        <p>Remove a particular quanitity of an item from the blockchain.</p>
+        <p><a class="btn btn-primary" href="{{ url_for('delete_item') }}">Remove an item! &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}

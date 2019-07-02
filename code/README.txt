@@ -1,0 +1,3 @@
+For the server to run correctly, it must be given a valid contract address and also a web address for the Ethereum blockchain. We recommend deploying the contract using Remix (or some other deployment service) and Ganache for the local blockchain, getting the contract address from Ganache, adding that address to the app.py file (there is a variable for contract address near the top of the file), and verifying that the address and port specified to web3 at the top of app.py matches the address and port of the blockchain to which the contract is deployed. 
+
+When you fill out forms on the site, use addresses and private keys provided by Ganache. You can then act as various different people and sell/buy items from different addresses.
